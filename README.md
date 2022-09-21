@@ -10,14 +10,15 @@
 
 ![OpenDataLab公开数据集平台](https://mmbiz.qpic.cn/mmbiz_png/7yjDpC9UfD7ViaLWVRvic3vEhu3bG6ssbt8KNmhKXxs80y3ou5nI7L82EQsqcjkhueDRB7NzHdTef67BiaRNHictNA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
 
-# 我们为大家提供了专业的数据集解读：
+# 更多资源戳：
 
+## 专业解读系列：
 [ADE20K数据集解读](https://github.com/opendatalab/datasets/blob/main/%E8%A7%A3%E8%AF%BB-ADE20K.md)
 
 [MINST数据集解读](https://github.com/opendatalab/datasets/blob/main/%E8%A7%A3%E8%AF%BB-MINST.md)
 
 
-同时整理了丰富的下载资源：
+## 数据集下载资源整理：
 
 [遥感场景识别数据集集合](https://github.com/opendatalab/datasets/blob/main/%E6%B1%87%E6%80%BB-%E9%81%A5%E6%84%9F%E5%9C%BA%E6%99%AF%E8%AF%86%E5%88%AB%E6%95%B0%E6%8D%AE%E9%9B%86.md)
 
