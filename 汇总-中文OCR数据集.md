@@ -4,8 +4,7 @@
 
 许多小伙伴反馈中文OCR数据集不好找，今天我们贴心地帮大家整理了8个常用的中文OCR数据集资源，记得收藏。
 
-## No.1  
-## MSRA-TD500 (MSRA Text Detection 500 Database)
+## No.1  MSRA-TD500 (MSRA Text Detection 500 Database)
 
 下载链接：
 https://opendatalab.com/MSRA-TD500
@@ -23,8 +22,7 @@ MSRA-TD500数据集样例（图源：参考资料[1]）
 MSRA-TD500数据集中的典型图像以及文字的标准矩形框 每一个矩形框对应一个文本行。红色的矩形框表示其中的文字被标记为“困难”。在MSRA-TD500数据集中，难以检测的文字（一般由低分辨率、模糊和遮挡等因素造成）会被标记为“困难”。
 
 
-## No.2  
-## Chinses Text in the Wild(CTW)
+## No.2  Chinses Text in the Wild(CTW)
 
 下载链接：
 https://ctwdataset.github.io/
@@ -46,8 +44,7 @@ CTW数据集样例示意（图源：参考资料[2]）
 对于每张图像，数据集中都标注了所有中文字符。对每个中文字符，数据集都标注了其真实字符、边界框和 6 个属性以指出其是否被遮挡、有复杂的背景、被扭曲、3D 凸出、艺术化，和手写体等。
 
 
-## No.3  
-## Reading Chinses Text in the Wild(RCTW-17)
+## No.3  Reading Chinses Text in the Wild(RCTW-17)
 
 下载链接：
 https://rctw.vlrlab.net/dataset.html
@@ -62,8 +59,7 @@ ICDAR（国际文档分析和识别大会）在2017年发起了一项专注于�
 RCTW-17数据集样例示意（图源：参考资料[3]）
 
 
-## No.4  
-## ICPR MWI 2018挑战赛
+## No.4  ICPR MWI 2018挑战赛
 
 下载链接：
 https://tianchi.aliyun.com/competition/entrance/231685/information
@@ -74,8 +70,7 @@ ICPR MWI 大赛提供的包含2000张图像的官方数据集，主要由合成�
 ICPR MWI 2018数据集标注样例，红框代表标注的文本框（图源：参考资料[4]）
 
 
-## No.5  
-## ShopSign
+## No.5  ShopSign
 
 下载链接：
 https://github.com/chongshengzhang/shopsign
@@ -94,8 +89,7 @@ ShopSign数据集中广告牌分类示意（图源：参考资料[5]）
 
 注释包括了每个文本行的四边形边界框的坐标（顺序：左上、右上、右下、左下）以及相对应的文本行的相应文本。ShopSign仅仅处理广告牌上的文本。
 
-## No.6  
-## ICDAR2019-LSVT
+## No.6  ICDAR2019-LSVT
 
 下载链接：
 https://github.com/chongshengzhang/shopsign
@@ -112,8 +106,7 @@ LSVT数据集精标注示意（图源：参考资料[6]）
 ![图片6-2](https://mmbiz.qpic.cn/mmbiz_png/7yjDpC9UfD7YrgdNDSweibQyclCBzqzKC3Iwf6NZnKOuvuoXANpFrUFlqzpJM5pGcjsNjBsP9GFUNviaNVcg07HQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
 LSVT数据集弱标注示意（图源：参考资料[6]）
 
-## No.7  
-## TotalText
+## No.7  TotalText
 
 下载链接：
 https://opendatalab.com/TotalText
@@ -123,8 +116,7 @@ Total-Text是最大弯曲文本数据集之一-ArT（任意形状文本数据集
 ![图片7](https://mmbiz.qpic.cn/mmbiz_png/7yjDpC9UfD7YrgdNDSweibQyclCBzqzKCK3yoG0vMkAruZdKYfc0Ih1VPCLeHVicJFwGibtUKqUcuotiayJhzoicgKw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
 TotalText数据集样例示意（图源：OpenDataLab）
 
-## No.8  
-## Caffe-ocr中文合成数据
+## No.8  Caffe-ocr中文合成数据
 
 下载链接：
 https://github.com/senlinuc/caffe_ocr
