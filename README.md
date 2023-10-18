@@ -19,6 +19,8 @@
 <div>&nbsp;</div>
 </div>
 
+**English**🌎|[简体中文](https://github.com/opendatalab/opendatalab-datasets/blob/main/introduction%20CN.md)🀄 
+
 **OpenDataLab Provide ecology for high-quality datasets for community.** It provides:
 
 ### Extensive open data resources
