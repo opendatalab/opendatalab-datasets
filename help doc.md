@@ -2,14 +2,14 @@ OpenDataLab supports multivariate data management. The data center provides the 
 
 
 # Dataset creation process
-## Create a dataset
+### Create a dataset
 **Step 1: Enter the dataset creation page,**  
 enter the content platform-data set center homepage, click Create to create a data set, and enter the data set creation page.
 
 **Step 2: Fill in the basic information of the dataset.**  
 Fill in the basic information of the data set, including the name of the database (unique index), data set display name, cover, description, data type, task type and annotation type. Click Create Now to complete the creation of a data set.
 
-## Upload data
+### Upload data
 **Step 1: Enter the data upload page.**  
 On the data set file tab page, click Upload to enter the data upload page.
 
@@ -22,7 +22,7 @@ After selecting the file, display the read file list. Click Upload Now to start 
 **Step 4: View Upload/Unzip Task Data**  
 After the upload/unzip task starts, you can view the upload/unzip task in the task list.
 
-## Improve the introduction of data sets and submit them to the public
+### Improve the introduction of data sets and submit them to the public
 **Step 1: Edit Data Set Introduction**  
 Click Edit Data Set Introduction in the Data Set Introduction tab to enter Data Set Meta Information Edit (metafile) and Data Set Description (README) Edit.
 
@@ -37,10 +37,10 @@ In the setting tab, the data set can be made public. The public data set require
 
 ---
 
-# Upload the dataset
+## Upload the dataset
 This document will guide you on how to upload data in the Dataset Center. There are 2 ways:
 
-## 1. Uploading data through the user interface  
+### 1. Uploading data through the user interface  
 **Step 1: Go to the data upload page.**   
 On the main page of the Dataset Center, find and click the "Dataset File" tab page. On this page, you will see a button called "Upload". Click it, and you will go to the data upload page.
 
@@ -59,7 +59,7 @@ After selecting the data type, select the file you want to upload. You will see 
 **Step 4: View the upload/unzip task**  
 Once the data upload/unzip task starts, you can view the task progress in the "Task List". This way, you can easily keep track of your upload and unzip tasks.
 
-## 2. Data upload through CLI and Python SDK
+### 2. Data upload through CLI and Python SDK
 
 In addition to data upload through the interface, we also support data upload through CLI and Python SDK. To upload data using the CLI and Python SDK, you need to install them first. The installation codes are as follows: `pip install openxlab` The following are some basic examples of using the CLI and SDK. For details, please refer to the developer documentation:
 
@@ -96,10 +96,10 @@ upload_folder(dataset_repo='username/repo_name',
 
 ---
 
-# Download the dataset
+## Download the dataset
 This document will guide you on how to download the data in the Dataset Center. There are 2 ways:
 
-## 1. Downloading data through the user interface
+### 1. Downloading data through the user interface
 **Step 1: Enter the Dataset List Page**  
 In the main page of the Dataset Center, you will see all the datasets that you have access to.
 
@@ -109,7 +109,7 @@ In the dataset list, find the dataset you want to download, and click the name o
 **Step 3: Download dataset**   
 On the dataset details page, click the data set file tab page to view the list of all files in this data set. Click the "Download" button on the right side of each file to download a single file.
 
-## 2. Download data via CLI, Python SDK
+### 2. Download data via CLI, Python SDK
 In addition to downloading data through the interface, we also support downloading data through the CLI, Python SDK. To upload data using the CLI and Python SDK, you need to install them first. The installation code is as follows: `pip install openxlab` The following are some basic examples of using the CLI and SDK. For details, please see the developer documentation
 
 **Download Dataset**  
@@ -166,13 +166,13 @@ Among：
 
 ---
 
-# Dataset card
+## Dataset card
 On the main page of the data set center, find and click the tab page of "Data Set Introduction", and click "Edit Data Set Introduction" to edit the introduction information and meta information of the dataset:
 
 - Edit the dataset introduction page by editing the README file.
 - Edit the metadata of the data set by editing metafile. The metadata includes data type, task type, annotation type, license, etc., and is edited in a visual form.
 
-## Dataset introduction (README)
+### Dataset introduction (README)
 The upper part of the dataset introduction (README) is the README editing area, which supports both editing and preview views. README can also be uploaded by the user. The entry is the file upload of "data set file".
 
 **Example**
@@ -199,10 +199,10 @@ If any, describe the data preprocessing process, such as missing value processin
 ## Citation
 ```
 
-## Dataset meta information (metafile)
+### Dataset meta information (metafile)
 The lower part is the metafile editing area, which is edited through the visual form. The metafile is automatically generated when the data set is created. If the data type, task type, annotation type, name and other information are filled in during creation, the corresponding field of the metafile will be automatically filled. Select the Chinese and English labels in the visual configuration, and automatically fill in the English labels in yaml.
 
-## Description of the metafile field
+### Description of the metafile field
 |English name|Chinese name|Filling method|Instructions|
 |---|---|---|---|
 |displayName|Name|Input|Only Chinese and English, numbers,-, and _ are supported|
@@ -218,19 +218,19 @@ The lower part is the metafile editing area, which is edited through the visual 
 
 ---
 
-# Dataset maintenance
+## Dataset maintenance
 In the "Settings" tab, you can maintain the basic information of the dataset, including changing the cover, changing the description of the dataset, changing the status of the dataset and deleting the dataset warehouse.
 
-## Dataset basic information
+### Dataset basic information
 Editable dataset information includes:
 
 ● Dataset cover, support clicking to upload the cover again.   
 ● Dataset description, which supports the modification of data set description.
 
-## Dataset visibility
+### Dataset visibility
 Support data set public/private state switching.
 
-## Delete Dataset Warehouse
+### Delete Dataset Warehouse
 It is a high-risk operation and requires careful operation.
 
 ---
