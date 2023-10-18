@@ -1,23 +1,44 @@
 本项目包含
 
+<div align="center">
+  <img src="https://mmbiz.qpic.cn/mmbiz_gif/7yjDpC9UfD5Fk0NBJ7dbXDia22rOZUkW96YCA68Gp4IBtguxRGoExUAj8tH5Qd8eibGpnQqjIGQ2P8eHgOibibyS1w/640?wx_fmt=gif&wxfrom=5&wx_lazy=1" height="100"/>
+  <div>&nbsp;</div>
+  <div align="center">
+    <b><font size="5">OpenDataLab website</font></b>
+    <sup>
+      <a href="https://opendatalab.com">
+        <i><font size="4">HOT</font></i>
+      </a>
+    </sup>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <b><font size="5">OpenXLab platform</font></b>
+    <sup>
+      <a href="https://openxlab.org.cn/datasets?lang=en-US">
+        <i><font size="4">TRY IT OUT</font></i>
+      </a>
+    </sup>
+</div>
+<div>&nbsp;</div>
+</div>
 
-OpenDataLab公开数据集平台介绍
-目前 OpenDataLab 平台(https://opendatalab.org.cn/)
-已拥有 3500+ 数据集、1300+ 任务类型、40TB 数据集规模，涵盖 30+的应用场景、20+ 标注类型、多种数据类型，数据集具备统一的数据集组织结构标准与标注格式标准，能够通过多种维度在平台上进行检索。
+**OpenDataLab Provide ecology for high-quality datasets for community.** It provides:
 
-![OpenDataLab公开数据集平台](https://mmbiz.qpic.cn/mmbiz_png/7yjDpC9UfD7ViaLWVRvic3vEhu3bG6ssbt8KNmhKXxs80y3ou5nI7L82EQsqcjkhueDRB7NzHdTef67BiaRNHictNA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
+### Extensive open data resources
+-High-speed and simple way to access open datasets  
+-Large scale open datasets resources  
+-1200+ Open datasets for Computer Vision\large model  
+-200+ Open datasets by CVPR  
+-Categorized datasets for hot topics  
 
-# 更多资源戳：
+### Open-source data processing toolkits
+-Data acquisition toolkits supporting large datasets  
+-Data acquisition toolkits supporting kinds of tasks  
+-Open source intelligent Toolbox for Labeling  
 
-## 专业解读系列：
-[ADE20K数据集解读]
+### Dataset description language
+-Format standardization  
+-DSDL: Dataset Description Language  
+-Define a CV dataset by DSDL  
+-OpenDataLab Standardized 100+ CV Datasets  
 
-[MINST数据集解读]
-
-
-## 数据集下载资源整理：
-
-[遥感场景识别数据集集合]
-
-[手部识别数据集集合]
-[中文OCR数据集集合]
+Check our [tutorials videos](https://www.youtube.com/watch?v=LjbRt7uddyw) (in Chinese) to get started.
