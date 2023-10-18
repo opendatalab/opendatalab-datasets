@@ -32,7 +32,7 @@
 
 ### Open-source data processing toolkits
 -Data acquisition toolkits supporting large datasets  
--Data acquisition toolkits supporting kinds of tasks  
+-Data acquisition toolkits supporting kinds of tasks   
 -Open source intelligent Toolbox for Labeling  
 
 ### Dataset description language
