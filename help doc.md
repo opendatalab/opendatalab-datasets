@@ -94,6 +94,7 @@ upload_folder(dataset_repo='username/repo_name',
                source_path='/path/to/local/folder', target_path='/train')
 ```
 
+---
 
 # Download the dataset
 This document will guide you on how to download the data in the Dataset Center. There are 2 ways:
@@ -234,16 +235,78 @@ It is a high-risk operation and requires careful operation.
 
 ---
 
+# Authentication management
+
+OpenXLab's OpenAPI uses Access Key & Secret Key for authentication. All registered accounts will be assigned a pair of AK and SK by default, which you can manage by entering the [personal center](https://sso.openxlab.org.cn/login). Login to OpenXLab Content Platform-Personal-Account and Security [Key Management] to view the AK/SK of the current account. If it is empty, click Add Key to add a pair of keys.
+
+Please note that your AK and SK are private. Please do not share it with others or save it on any client/APP, nor use any version management tools to push it to the public network. For production scenarios, all OpenAPI calls need to be routed through the backend service, and the API Key can be read through environment variables or other key management services.
+
+If AK and SK are leaked, you can enter the [personal center](https://sso.openxlab.org.cn/login) to delete this certificate and regenerate it. Note that this operation will invalidate all API_KEY generated using the AK and SK.
+
+## AK and SK settings
+Before officially using the SDK/CLI, you need to complete the local configuration of the AK/SK of the Puyuan Content Platform account, otherwise the identity verification cannot be passed when using the SDK/CL to access the Puyuan Content Platform.
+
+**Configuration method 1: **  
+Configure through CLI commands
+
+1. It is recommended to use Puyuan openxlab command line tool to configure AK/SK. The command line tool can be installed through `pip install openxlab`. After completing the installation of the command line tool, configure it through the login command.
+```
+openxlab login
+
+OpenXLab Access Key ID: xxxxxxxxxxxxxxxxxxxx
+OpenXLab Secret Access Key: xxxxxxxxxxxxxxxxxxx
+```
+
+2. Use the openxlab login command to enter the corresponding `Access key`and `Secret key` as prompted. After completion, the `config.json` file will be generated in the `~/.openxlab` directory with the following format:
+```
+{
+    "ak": "vmb1akg9w1xwdrxnyxlr",
+    "sk": "9gvpqrel6jez23ywerzvbz2dbpq4y8b1aow5nngx"
+}
+```
+
+**Configuration method 2:**  
+Configure by creating a `config.json` file
+
+Create the corresponding `config.json file` directly in the `~/.openxlab` directory, fill in the corresponding `Access key` and `Secret key`, the format is as follows:
+```
+{
+    "ak": "vmb1akg9w1xwdrxnyxlr",
+    "sk": "9gvpqrel6jez23ywerzvbz2dbpq4y8b1aow5nngx"
+}
+```
+
+### SDK authentication
+**Configuration method 1:** Configure through the `openxlab.login()` function AK / SK for authentication
+
+Authentication is implemented through the provided `login() `function, and the corresponding `Access key` and `Secret key` are filled in the function. The usage method is as follows:
+```
+import openxlab
+openxlab.login(ak=<Access Key>, sk=<Secret Key>)
+```
+
+**Configuration method 2:**   
+Configure environment variables in application settings and configure AK / SK for authentication
+
+You can find [Application Configuration] on the settings page of a personally created application to set environment variables. You can set the `Access key` to the environment variable named `OPENXLAB_AK` and the `Secret key` to the environment variable named `OPENXLAB_SK`.
+
+---
+
 # Dataset CLI (Command Line Utility)
 ## Overview
-Puyuan Content Platform Command Line Tools (openxlab Command Line Interface) provides command line tools for publishers in the data set center. This tool enables you to manage Dataset Center, and the content resources contributed by Dataset Center.
+OpenXLab Command Line Interface provides command line tools for publishers in the data set center. This tool enables you to manage Dataset Center, and the content resources contributed by Dataset Center.
 
-The command line structure specification of Puyuan Content Platform CLI tool is as follows:
+**The command line structure specification of Puyuan Content Platform CLI tool is as follows:**
 
 ```
 openxlab  <command > <subcommand >  [options and parameters]
 ```
-Openxlab: The name of the CLI tool of the openxlab Puyuan Content Platform command: Specifies a top-level command (case-insensitive, default lowercase) that typically indicates the name of a submodule or product supported in the command-line tool, such as dataset, data, app, etc. Or functional commands that represent the command-line tool itself, such as help, config, and so on. Subcommand: Specifies an additional subcommand to perform an action, that is, a specific action. Options and parameters: Specifies options or API parameter options that control CLI behavior. The option values can be numbers, strings, JSON structure strings, and so on.
+● `Openxlab`: The name of the CLI tool of the openxlab Puyuan Content Platform   
+● `command`: Specifies a top-level command (case-insensitive, default lowercase)
+  - that typically indicates the name of a submodule or product supported in the command-line tool, such as dataset, data, app, etc.
+  - Or functional commands that represent the command-line tool itself, such as help, config, and so on.
+● `Subcommand`: Specifies an additional subcommand to perform an action, that is, a specific action.  
+● `Options and parameters`: Specifies options or API parameter options that control CLI behavior. The option values can be numbers, strings, JSON structure strings, and so on.
 
 ## Installation guide
 **Install using pip**
@@ -251,7 +314,7 @@ Openxlab: The name of the CLI tool of the openxlab Puyuan Content Platform comma
 ```
 pip install openxlab
 ```
-Release address: https://pypi.org/project/openxlab/ (opens new window)
+Release address: https://pypi.org/project/openxlab
 
 **Unload**
 
@@ -259,19 +322,21 @@ Release address: https://pypi.org/project/openxlab/ (opens new window)
 pip uninstall openxlab
 ```
 
-## Configuration guide
+## Configuration guide  
+
+**AK and SK settings**
 Before formally using **Setting of AK and SK** the SDK/CLI, it is necessary to complete the local configuration of AK/SK of the Puyuan content platform account, otherwise the identity verification cannot be passed when using the SDK/CL to access the Puyuan content platform. Please refer to the configuration method: [鉴权管理](https://openxlab.org.cn/docs/developers/%E9%89%B4%E6%9D%83%E7%AE%A1%E7%90%86.html)
 
-Dataset Center CLI Features Features Overview Dataset Info View dataset info Dataset File List View dataset ls dataset Create dataset Create dataset Upload file dataset Upload-file dataset Upload folder dataset Upload-folder dataset download dataset get dataset file download dataset download dataset commit modify dataset commit dataset repository delete dataset remove
+## Dataset Center CLI Features
 
-## Dataset information viewing dataset info
+### Dataset information viewing (dataset info)
 
 ```
 openxlab dataset info --dataset-repo <dataset-repo>
 ```
-|参数|缩写|Required or not|参数类型|参数说明|示例|
+|Parameter|Abbreviation|Required or not|Parameter type|Parameter description|Example|
 |---|---|---|---|---|---|
-|--dataset-repo|-r|是|String|Address of the data set repository, consisting of username/repo _ name.|zhangsan/repo-name|
+|--dataset-repo|-r|yes|String|Address of the data set repository, consisting of username/repo _ name.|zhangsan/repo-name|
 
 Example:
 
@@ -280,14 +345,14 @@ openxlab dataset info --dataset-repo my_dataset_name
 openxlab dataset info -r my_dataset_name
 ```
 
-## Dataset file list viewing dataset ls
+### Dataset file list viewing (dataset ls)
 
 ```
 openxlab dataset ls --dataset-repo <dataset-repo>
 ```
-|参数|缩写|Required or not|参数类型|参数说明|示例|
+|Parameter|Abbreviation|Required or not|Parameter type|Parameter description|Example|
 |---|---|---|---|---|---|
-|--dataset-repo	-r|是|String|Address of the data set repository, consisting of username/repo _ name.|zhangsan/repo-name|
+|--dataset-repo	-r|yes|String|Address of the data set repository, consisting of `username/repo_name`|zhangsan/repo-name|
 
 Example:
 
@@ -296,14 +361,14 @@ openxlab dataset ls --dataset-repo my_dataset_name
 openxlab dataset ls -r my_dataset_name
 ```
 
-## Dataset createdataset create
+### Dataset create (dataset create)
 
 ```
 openxlab dataset create --repo-name <repo-name>
 ```
-|参数|缩写|Required or not|参数类型|参数说明|示例|
+|Parameter|Abbreviation|Required or not|Parameter type|Parameter description|Example|
 |---|---|---|---|---|---|
-|--repo-name|无|是|String|The name of the data set warehouse, which, together with the user name, forms the data set warehouse address|dataset_name|
+|--repo-name|-|yes|String|The name of the data set warehouse, which, together with the user name, forms the data set warehouse address|dataset_name|
 
 For example, when creating a warehouse, you need to fill in the name of the dataset warehouse, and the visibility of the dataset is private by default
 
@@ -311,16 +376,16 @@ For example, when creating a warehouse, you need to fill in the name of the data
 openxlab dataset create --repo-name dataset_name
 ```
 
-## Dataset upload file dataset upload-file
+### Dataset upload file (dataset upload-file)
 
 ```
 openxlab dataset upload-file --dataset-repo <dataset-repo> 
 ```
-|参数|缩写|Required or not|参数类型|参数说明|示例|
+|Parameter|Abbreviation|Required or not|Parameter type|Parameter description|Example|
 |---|---|---|---|---|---|
-|--dataset-repo|-r|是|String|Address of the data set repository, consisting of username/repo _ name.|zhangsan/repo-name|
-|--source-path|-s|是|String|上传本地文件的所在的路径|-s /path/to/local/folder/1.jpg|
-|--target-path|-t|否|String|Corresponding to the relative path under the data set warehouse. If not added, it will be uploaded to the root directory of the warehouse.|-t /raw/train|
+|--dataset-repo|-r|yes|String|Address of the data set repository, consisting of `username/repo_name`|zhangsan/repo-name|
+|--source-path|-s|yes|String|The path where the local file is uploaded|-s /path/to/local/folder/1.jpg|
+|--target-path|-t|no|String|Corresponding to the relative path under the data set warehouse. If not added, it will be uploaded to the root directory of the warehouse.|-t /raw/train|
 
 Example:
 
@@ -334,16 +399,16 @@ openxlab dataset upload-file -r username/repo-name
             -t /raw/train
 ```
 
-## Dataset upload folder dataset upload-folder
+### Dataset upload folder (dataset upload-folder)
 
 ```
 openxlab dataset upload-folder --dataset-repo <dataset-repo> 
 ```
-|参数|缩写|Required or not|参数类型|参数说明|示例|
+|Parameter|Abbreviation|Required or not|Parameter type|Parameter description|Example|
 |---|---|---|---|---|---|
-|--dataset-repo|-r|是|String|Address of the data set repository, consisting of username/repo _ name.|zhangsan/repo-name|
-|--source-path|-s|是|String|上传本地文件夹的所在的路径|-s /path/to/local/folder|
-|--target-path|-t|否|String|Corresponding to the relative path under the data set warehouse. If not added, it will be uploaded to the root directory of the warehouse.|-t /raw/train|
+|--dataset-repo|-r|yes|String|Address of the data set repository, consisting of `username/repo_name`.|zhangsan/repo-name|
+|--source-path|-s|yes|String|The path to upload the local folder|-s /path/to/local/folder|
+|--target-path|-t|no|String|Corresponding to the relative path under the data set warehouse. If not added, it will be uploaded to the root directory of the warehouse.|-t /raw/train|
 
 Example:
 
@@ -357,15 +422,15 @@ openxlab dataset upload-folder -r username/repo-name
             -t /raw/train
 ```
 
-## Data set download dataset get
+### Dataset download `dataset get`
 
 ```
 openxlab dataset get --dataset-repo <dataset-repo> 
 ```
-|参数|缩写|Required or not|参数类型|参数说明|示例|
+|Parameter|Abbreviation|Required or not|Parameter type|Parameter description|Example|
 |---|---|---|---|---|---|
-|--dataset-repo|-r|是|String|Address of the data set repository, consisting of username/repo _ name.|	zhangsan/dataset-repo-name|
-|--target-path|-t|否|String|下载仓库指定的本地路径|--target-path /path/to/local/folder|
+|--dataset-repo|-r|yes|String|Address of the data set repository, consisting of `username/repo_name`.|	zhangsan/dataset-repo-name|
+|--target-path|-t|no|String|Download the local path specified by the warehouse|--target-path /path/to/local/folder|
 
 Example:
 
@@ -377,16 +442,16 @@ openxlab dataset get -r username/repo-name
                   -t /path/to/local/folder
 ```
 
-## Dataset file download dataset download
+### Dataset file download (dataset download)
 
 ```
 openxlab dataset download --dataset-repo <dataset-repo> 
 ```
-|参数|缩写|Required or not|参数类型|参数说明|示例|
+|Parameter|Abbreviation|Required or not|Parameter type|Parameter description|Example|
 |---|---|---|---|---|---|
-|--dataset-repo|-r|是|String|Address of the data set repository, consisting of username/repo _ name.|zhangsan/repo-name|
-|--source-path|-s|是|String|Relative path of the file under the corresponding data set warehouse|-s /train/file|
-|--target-path|-t|否|String|下载仓库指定的本地路径|--target-path /path/to/local/folder|
+|--dataset-repo|-r|yes|String|Address of the data set repository, consisting of `username/repo_name`|zhangsan/repo-name|
+|--source-path|-s|yes|String|Relative path of the file under the corresponding data set warehouse|-s /train/file|
+|--target-path|-t|no|String|Download the local path specified by the warehouse|--target-path /path/to/local/folder|
 
 Example:
 
@@ -399,15 +464,16 @@ openxlab dataset download -r username/repo-name
             -s /train/file
             -t /path/to/local/folder
 ```
-## Dataset commit modify dataset commit
+### Dataset commit modify (dataset commit)
 
 ```
 openxlab dataset commit --dataset-repo <dataset-repo> 
 ```
-|参数|缩写|Required or not|参数类型|参数说明|示例|
+
+|Parameter|Abbreviation|Required or not|Parameter type|Parameter description|Example|
 |---|---|---|---|---|---|
-|--dataset-repo|-r|是|String|数据集仓库的地址，由 username/repo-name 组成|--dataset-repo='/zhangsan/repo-name'|
-|--commit-message|-m|是|String|提交信息|--commit-message 'uploading'|
+|--dataset-repo|-r|yes|String|The address of the data set warehouse, consisting of `username/repo_name`|--dataset-repo='/zhangsan/repo-name'|
+|--commit-message|-m|yes|String|Submit Information|--commit-message 'uploading'|
 
 Example:
 
@@ -417,14 +483,14 @@ openxlab dataset commit --dataset-repo username/repo-name --commit-message 'my f
 openxlab dataset commit -r username/repo-name -m 'my first commit'
 ```
 
-## Dataset warehouse removing dataset remove
+### Dataset warehouse removing (dataset remove)
 
 ```
 openxlab dataset remove --dataset-repo <dataset-repo>
 ```
-|参数|缩写|Required or not|参数类型|参数说明|示例|
+|Parameter|Abbreviation|Required or not|Parameter type|Parameter description|Example|
 |---|---|---|---|---|---|
-|--dataset-repo|-r|是|String|Address of the data set repository, consisting of username/repo-name|zhangsan/repo-name|
+|--dataset-repo|-r|yes|String|Address of the data set repository, consisting of `username/repo-name`|zhangsan/repo-name|
 
 For example, if you want to delete a warehouse, you need to fill in the name of the data set warehouse, and the deletion operation is irreversible
 
@@ -433,128 +499,136 @@ openxlab dataset remove --dataset-repo my_dataset_name
 openxlab dataset remove -r my_dataset_name
 ```
 
+---
 
 # Dataset Python SDK
 
 ## Overview
 The Python SDK for Puyuan Content Platform-Dataset Center is designed to provide developers with a programmatic way to manage and operate the functions of the Dataset Center Platform so that they can easily interact with the Datasets Center and manage datasets. Developers can programmatically perform the following tasks:
 
-View dataset meta information and file list Create and modify datasets: Create datasets, upload files, upload folders Download datasets: Download the entire dataset repository, dataset files The Python SDK of Puyuan Content Platform-Model Center is designed to provide developers with programmatic ways to manage and operate the functions of the Model Center Platform. So that they can easily interact with the Model Center and model management. Through the inference interface provided by Python SDK, developers can call different models efficiently and realize the development of model applications. The Python SDK enables developers to programmatically perform the following tasks:
+● View dataset meta information and file list  
+● Create and modify datasets: Create datasets, upload files, upload folders  
+● Download datasets: Download the entire dataset repository, dataset files  
 
-View the dataset: View the metadata and file list of the dataset Create and modify the dataset: Create the dataset, upload the file, and upload the folder Download the dataset: Download the entire dataset warehouse and dataset files Using the Python SDK of the dataset platform, developers can manage and use datasets more easily and improve their work efficiency.
+The Python SDK of OpenXLab Content Platform-Model Center is designed to provide developers with programmatic ways to manage and operate the functions of the Model Center Platform. So that they can easily interact with the Model Center and model management. Through the inference interface provided by Python SDK, developers can call different models efficiently and realize the development of model applications. The Python SDK enables developers to programmatically perform the following tasks:
+
+● **View the dataset:** View the metadata and file list of the dataset  
+● **Create and modify the dataset:** Create the dataset, upload the file, and upload the folder  
+● **Download the dataset:** Download the entire dataset warehouse and dataset files Using the Python SDK of the dataset platform, developers can manage and use datasets more easily and improve their work efficiency.
 
 ## Installation guide
-Install the SDK using pip
+**Install the SDK using pip**
 
 ```
 pip install openxlab
 ```
 Release address: https://pypi.org/project/openxlab/.
 
-Uninstall the SDK
+**Uninstall the SDK**
 
 ```
 pip uninstall openxlab
 ```
 
 ## Authentication of SDK
-Configuration method 1: configure AK/SK for authentication through the openxlab. Login () function
+**Configuration method 1:**   
+configure AK/SK for authentication through the `openxlab. Login ()` function
 
-Implement authentication through the provided login () function, and fill in the corresponding Access key and Secret key in the function. The usage method is as follows:
+Implement authentication through the provided `login ()` function, and fill in the corresponding `Access key` and `Secret key` in the function. The usage method is as follows:
 
 ```
 import openxlab
 openxlab.login(ak=<Access Key>, sk=<Secrete Key>)
 ```
 
-Configuration mode 2: Configure environment variables in application settings, and configure AK/SK for authentication
+**Configuration mode 2:**   
+Configure environment variables in application settings, and configure AK/SK for authentication
 
-You can find [Application Configuration] to set environment variables on the settings page of the application created by individuals. You can set the Access key to an environment variable named OPENXLAB _ AK and the Secret key to an environment variable named OPENXLAB _ SK.
+You can find [Application Configuration] to set environment variables on the settings page of the application created by individuals. You can set the `Access key` to an environment variable named `OPENXLAB_AK` and the `Secret key` to an environment variable named `OPENXLAB_SK`.
 
+## Function overview
 
-Function overview Data set meta information View info Data set file list View query Data set Create create _ repo Data set Upload file upload _ file Data set Upload folder upload _ folder Data set Repository Download get Data set File Download The download data set commits the modification commit data set warehouse to delete the remove _ repo.
-
-Dataset Meta Info View info
+### Dataset Meta Info View (info)
 
 ```
 from openxlab.dataset import info
 info(dataset_repo='username/repo_name')
 ```
-|参数|缩写|Required or not|参数类型|参数说明|示例|
+|Parameter|Abbreviation|Required or not|Parameter type|Parameter description|Example|
 |---|---|---|---|---|---|
-| | dataset _ repo | -r | is | String | the address of the data set repository, consisting of username/repo _ name | zhangsan/ceshi |
+| | dataset _ repo | -r | yes | String | the address of the data set repository, consisting of username/repo _ name | zhangsan/ceshi |
 
-## Dataset file list viewing query
+### Dataset file list viewing (query)
 
 ```
 from openxlab.dataset import query
 query(dataset_repo='username/repo_name')
 ```
-|参数|缩写|Required or not|参数类型|参数说明|示例|
+|Parameter|Abbreviation|Required or not|Parameter type|Parameter description|Example|
 |---|---|---|---|---|---|
-|dataset_repo|-r|是|String|Address of the data set repository, consisting of username/repo _ name.|zhangsan/ceshi|
+|dataset_repo|-r|yes|String|Address of the data set repository, consisting of username/repo _ name.|zhangsan/ceshi|
 
-## Dataset creation create _ repo.
+### Dataset creation (create_repo)
 
 ```
 from openxlab.dataset import create_repo
 create_repo(repo_name='repo_name')
 ```
-|参数|缩写|Required or not|参数类型|参数说明|示例|
+|Parameter|Abbreviation|Required or not|Parameter type|Parameter description|Example|
 |---|---|---|---|---|---|
-|repo_name|无|是|String|The name of the data set warehouse, which, together with the user name, forms the data set warehouse address|ceshi|
+|repo_name|-|yes|String|The name of the data set warehouse, which, together with the user name, forms the data set warehouse address|ceshi|
 
-## Dataset upload file upload _ file
+### Dataset upload file (upload_file)
 
 ```
 from openxlab.dataset import upload_file
 upload_file(dataset_repo='username/repo_name')
               source_path='/path/to/local/file', target_path='/train')
 ```
-|参数|缩写|Required or not|参数类型|参数说明|示例|
+|Parameter|Abbreviation|Required or not|Parameter type|Parameter description|Example|
 |---|---|---|---|---|---|
-|dataset_repo|-r|是|String|Address of the data set repository, consisting of username/repo _ name.|zhangsan/repo-name|
-|source_path|-s|是|String|上传本地文件的所在的路径|source_path='/path/to/local/folder/1.jpg'|
-|target_path|-t|否|String|Corresponding to the relative path under the data set warehouse. If not added, it will be uploaded to the root directory of the warehouse.|target_path='/train'|
+|dataset_repo|-r|yes|String|Address of the data set repository, consisting of username/repo _ name.|zhangsan/repo-name|
+|source_path|-s|yes|String|The path where the local file is uploaded|source_path='/path/to/local/folder/1.jpg'|
+|target_path|-t|no|String|Corresponding to the relative path under the data set warehouse. If not added, it will be uploaded to the root directory of the warehouse.|target_path='/train'|
 
-## Dataset upload folder upload _ folder
+### Dataset upload folder (upload_folder)
 
 ```
 from openxlab.dataset import upload_folder
 upload_folder(dataset_repo='username/repo_name')
               source_path='/path/to/local/folder', target_path='/train')
 ```
-|参数|缩写|Required or not|参数类型|参数说明|示例|
+|Parameter|Abbreviation|Required or not|Parameter type|Parameter description|Example|
 |---|---|---|---|---|---|
-|dataset_repo|-r|是|String|Address of the data set repository, consisting of username/repo _ name.|zhangsan/repo-name|
-|source_path|-s|是|String|上传本地文件的所在的路径|source_path='/path/to/local/folder'|
-|target_path|-t|否|String|Corresponding to the relative path under the data set warehouse. If not added, it will be uploaded to the root directory of the warehouse.|target_path='/train'|
+|dataset_repo|-r|yes|String|Address of the data set repository, consisting of `username/repo_name`|zhangsan/repo-name|
+|source_path|-s|yes|String|The path where the local file is uploaded|source_path='/path/to/local/folder'|
+|target_path|-t|no|String|Corresponding to the relative path under the data set warehouse. If not added, it will be uploaded to the root directory of the warehouse.|target_path='/train'|
 
-## Dataset warehouse download get
+### Dataset warehouse download (get)
 
 ```
 from openxlab.dataset import get
 get(dataset_repo='username/repo_name', target_path='/path/to/local/folder')
 ```
-|参数|缩写|Required or not|参数类型|参数说明|示例|
+|Parameter|Abbreviation|Required or not|Parameter type|Parameter description|Example|
 |---|---|---|---|---|---|
-|dataset_repo|-r|是|String|Address of the data set repository, consisting of username/repo _ name.|zhangsan/repo_name|
-|target_path|-t|否|String|下载仓库指定的本地路径|target_path='/path/to/local/folder'|
+|dataset_repo|-r|yes|String|Address of the data set repository, consisting of `username/repo_name`|zhangsan/repo_name|
+|target_path|-t|no|String|Download the local path specified by the warehouse|target_path='/path/to/local/folder'|
 
-## Data set file download
+### Data set file (download)
 
 ```
 from openxlab.dataset import download
 download(dataset_repo='username/repo_name')
               source_path='/train/file', target_path='/path/to/local/folder')
 ```
-|参数|缩写|Required or not|参数类型|参数说明|示例|
+|Parameter|Abbreviation|Required or not|Parameter type|Parameter description|Example|
 |---|---|---|---|---|---|
-|dataset_repo|-r|是|String|Address of the data set repository, consisting of username/repo _ name.|zhangsan/repo-name|
-|source_path|-s|是|String|对应数据集仓库下文件的相对路径|source_path='/train/file'|
-|target_path|-t|否|String|下载仓库指定的本地路径|target_path='/path/to/local/folder'|
+|dataset_repo|-r|yes|String|Address of the data set repository, consisting of `username/repo_name`|zhangsan/repo-name|
+|source_path|-s|yes|String|Relative path to the file in the corresponding data set warehouse|source_path='/train/file'|
+|target_path|-t|no|String|Download the local path specified by the warehouse|target_path='/path/to/local/folder'|
 
-## Dataset commit modify commit
+### Dataset commit modify (commit)
 
 ```
 from openxlab.dataset import commit
@@ -565,17 +639,17 @@ commit(dataset_repo='username/repo_name', commit_message='my first commit.')
 from openxlab.dataset import commit
 commit(dataset_repo='username/repo_name'，commit_message='my first commit.')
 ```
-|参数|缩写|Required or not|参数类型|参数说明|示例|
+|Parameter|Abbreviation|Required or not|Parameter type|Parameter description|Example|
 |---|---|---|---|---|---|
-|dataset_repo|-r|是|String|Address of the data set repository, consisting of username/repo _ name.|dataset_repo='/zhangsan/ceshi'|
-|commit_message|-m|是|String|提交信息|commit_message='my first commit.'|
+|dataset_repo|-r|yes|String|Address of the data set repository, consisting of `username/repo_name`|dataset_repo='/zhangsan/ceshi'|
+|commit_message|-m|yes|String|Submit Information|commit_message='my first commit.'|
 
-## Dataset Warehouse Delete remove _ repo.
+### Dataset Warehouse Delete (remove_repo)
 
 ```
 from openxlab.dataset import remove_repo
 remove_repo(dataset_repo='username/repo_name')
 ```
-|参数|缩写|Required or not|参数类型|参数说明|示例|
+|Parameter|Abbreviation|Required or not|Parameter type|Parameter description|Example|
 |---|---|---|---|---|---|
-|dataset_repo|无|是|String|Address of the data set repository, consisting of username/repo _ name.|zhangsan/ceshi|
+|dataset_repo|-|yes|String|Address of the data set repository, consisting of `username/repo_name`|zhangsan/ceshi|
