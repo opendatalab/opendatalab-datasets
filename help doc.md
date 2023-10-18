@@ -1,4 +1,4 @@
-**English**🌎|[简体中文]([https://github.com/opendatalab/opendatalab-datasets/blob/main/help%20doc.md](https://github.com/opendatalab/opendatalab-datasets/blob/main/%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3.md))🀄  
+**English**🌎|[简体中文](https://github.com/opendatalab/opendatalab-datasets/blob/main/%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3.md)🀄  
 
 OpenDataLab supports multivariate data management. The data center provides the display, retrieval and download of public data sets, as well as the upload, management and publishing of private data sets, and supports the open sharing of user-built data sets. The data set center provides free and open source data sets for AI researchers. Through the data set center, researchers can obtain classic data sets in various fields in a unified format. Through the search function of the platform, researchers can quickly and conveniently find the data sets they need; through the unified format of the platform, researchers can easily develop tasks across data sets.
 
