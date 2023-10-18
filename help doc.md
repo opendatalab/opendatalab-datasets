@@ -327,7 +327,7 @@ pip uninstall openxlab
 ## Configuration guide  
 
 **AK and SK settings**
-Before formally using **Setting of AK and SK** the SDK/CLI, it is necessary to complete the local configuration of AK/SK of the Puyuan content platform account, otherwise the identity verification cannot be passed when using the SDK/CL to access the Puyuan content platform. Please refer to the configuration method: [鉴权管理](https://openxlab.org.cn/docs/developers/%E9%89%B4%E6%9D%83%E7%AE%A1%E7%90%86.html)
+Before formally using **Setting of AK and SK** the SDK/CLI, it is necessary to complete the local configuration of AK/SK of the Puyuan content platform account, otherwise the identity verification cannot be passed when using the SDK/CL to access the Puyuan content platform. Please refer to the configuration method: [Authentication management](#Authentication-management)
 
 ## Dataset Center CLI Features
 
