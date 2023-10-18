@@ -24,7 +24,7 @@
 ### Extensive open data resources
 ● High-speed and simple way to access open datasets  
 ● Large scale open datasets resources  
-● 1200+ Open datasets for Computer Vision\large model
+● 1200+ Open datasets for Computer Vision\Large Model
 <br>
 ● 200+ Open datasets by CVPR  
 ● Categorized datasets for hot topics  
