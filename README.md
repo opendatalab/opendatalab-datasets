@@ -31,6 +31,8 @@
 -200+ Open datasets by CVPR  
 -Categorized datasets for hot topics  
 
+![](顶会顶刊数据集/ECCV/img/introduction.png)
+
 ### Open-source data processing toolkits
 -Data acquisition toolkits supporting large datasets  
 -Data acquisition toolkits supporting kinds of tasks   
