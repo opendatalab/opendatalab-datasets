@@ -246,7 +246,7 @@ If AK and SK are leaked, you can enter the [personal center](https://sso.openxla
 ## AK and SK settings
 Before officially using the SDK/CLI, you need to complete the local configuration of the AK/SK of the Puyuan Content Platform account, otherwise the identity verification cannot be passed when using the SDK/CL to access the Puyuan Content Platform.
 
-**Configuration method 1: **  
+**Configuration method 1:**  
 Configure through CLI commands
 
 1. It is recommended to use Puyuan openxlab command line tool to configure AK/SK. The command line tool can be installed through `pip install openxlab`. After completing the installation of the command line tool, configure it through the login command.
