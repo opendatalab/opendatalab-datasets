@@ -46,9 +46,9 @@
 
 ---
 
-今年9月，我们升级上线了作者上传原创数据集的功能。我们特此邀请您参与使用，更好地推广您的开源数据集、人工智能研究成果等；让更多的人能够访问、获取和使用您的数据集。
+今年9月，我们升级上线了作者上传原创数据集的功能。特此邀请您参与使用，更好地推广您的开源数据集、人工智能研究成果等；让更多的人能够访问、获取和使用您的数据集。
 
-这是数据集自主上传功能的[【帮助文档】](https://github.com/opendatalab/opendatalab-datasets/blob/main/help%20doc.md)，您可以根据需要创建并分享您的数据集。
+这是数据集自主上传功能的[【帮助文档】](https://github.com/opendatalab/opendatalab-datasets/blob/main/%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3.md)，您可以根据需要创建并分享您的数据集。
 
 如果您有任何疑问或障碍，请随时与我们联系  <a href="mailto:OpenDataLab@pjlab.org.cn">OpenDataLab@pjlab.org.cn</a>。
 
