@@ -1,5 +1,3 @@
-本项目包含
-
 <div align="center">
   <img src="https://mmbiz.qpic.cn/mmbiz_gif/7yjDpC9UfD5Fk0NBJ7dbXDia22rOZUkW96YCA68Gp4IBtguxRGoExUAj8tH5Qd8eibGpnQqjIGQ2P8eHgOibibyS1w/640?wx_fmt=gif&wxfrom=5&wx_lazy=1" height="100"/>
   <div>&nbsp;</div>
@@ -30,8 +28,6 @@
 <br>
 -200+ Open datasets by CVPR  
 -Categorized datasets for hot topics  
-
-![](顶会顶刊数据集/ECCV/img/introduction.png)
 
 ### Open-source data processing toolkits
 -Data acquisition toolkits supporting large datasets  
