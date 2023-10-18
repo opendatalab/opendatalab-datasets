@@ -50,6 +50,6 @@
 
 这是数据集自主上传功能的[【帮助文档】](https://github.com/opendatalab/opendatalab-datasets/blob/main/help%20doc.md)，您可以根据需要创建并分享您的数据集。
 
-如果您有任何疑问或障碍，请随时与我们联系。
+如果您有任何疑问或障碍，请随时与我们联系  <a href="mailto:OpenDataLab@pjlab.org.cn">OpenDataLab@pjlab.org.cn</a>。
 
 ![](https://mmbiz.qpic.cn/sz_mmbiz_png/7yjDpC9UfD6e5eWSibnQrIropE0SAlKp9VMDyx12T8s3B9Ziam6UEun6NmRk9082qlSyFVDEcnMvbxIoEpcykNWw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
