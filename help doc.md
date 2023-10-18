@@ -277,7 +277,8 @@ Create the corresponding `config.json file` directly in the `~/.openxlab` direct
 ```
 
 ### SDK authentication
-**Configuration method 1:** Configure through the `openxlab.login()` function AK / SK for authentication
+**Configuration method 1:**  
+Configure through the `openxlab.login()` function AK / SK for authentication
 
 Authentication is implemented through the provided `login() `function, and the corresponding `Access key` and `Secret key` are filled in the function. The usage method is as follows:
 ```
