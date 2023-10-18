@@ -138,7 +138,7 @@ openxlab dataset download -r username/repo-name
 Among：
 | Parameter | Abbreviation | Required | Parameter Type | Parameter Description | Example |
 |---|---|---|---|---|---|
-|dataset_repo|-r|yes|String|Address of the dataset repository, consisting of `username/repo_name`.|zhangsan/repo-name|
+|dataset_repo|-r|yes|String|Address of the dataset repository, consisting of `username/repo_name`|zhangsan/repo-name|
 |source_path|-s|yes|String|Relative path of the file under the corresponding data set warehouse|-s /train/file|
 |target_path|-t|no|String|Download the local path specified by the warehouse|--target-path /path/to/local/folder|
 
@@ -160,7 +160,7 @@ Among：
 
 | Parameter | Abbreviation | Required | Parameter Type | Parameter Description | Example |
 |---|---|---|---|---|---|
-|dataset_repo|-r|yes|String|Address of the data set repository, consisting of `username/repo _ name`.|zhangsan/repo-name|
+|dataset_repo|-r|yes|String|Address of the data set repository, consisting of `username/repo_name`|zhangsan/repo-name|
 |source_path|-s|yes|String|Relative path to the file in the corresponding data set warehouse|-s /path/to/local/folder|
 |target_path|-t|no|String|Download the local path specified by the warehouse|--target-path /path/to/local/folder|
 
@@ -336,7 +336,7 @@ openxlab dataset info --dataset-repo <dataset-repo>
 ```
 |Parameter|Abbreviation|Required or not|Parameter type|Parameter description|Example|
 |---|---|---|---|---|---|
-|--dataset-repo|-r|yes|String|Address of the data set repository, consisting of username/repo _ name.|zhangsan/repo-name|
+|--dataset-repo|-r|yes|String|Address of the data set repository, consisting of `username/repo_name`|zhangsan/repo-name|
 
 Example:
 
@@ -406,7 +406,7 @@ openxlab dataset upload-folder --dataset-repo <dataset-repo>
 ```
 |Parameter|Abbreviation|Required or not|Parameter type|Parameter description|Example|
 |---|---|---|---|---|---|
-|--dataset-repo|-r|yes|String|Address of the data set repository, consisting of `username/repo_name`.|zhangsan/repo-name|
+|--dataset-repo|-r|yes|String|Address of the data set repository, consisting of `username/repo_name`|zhangsan/repo-name|
 |--source-path|-s|yes|String|The path to upload the local folder|-s /path/to/local/folder|
 |--target-path|-t|no|String|Corresponding to the relative path under the data set warehouse. If not added, it will be uploaded to the root directory of the warehouse.|-t /raw/train|
 
@@ -429,7 +429,7 @@ openxlab dataset get --dataset-repo <dataset-repo>
 ```
 |Parameter|Abbreviation|Required or not|Parameter type|Parameter description|Example|
 |---|---|---|---|---|---|
-|--dataset-repo|-r|yes|String|Address of the data set repository, consisting of `username/repo_name`.|	zhangsan/dataset-repo-name|
+|--dataset-repo|-r|yes|String|Address of the data set repository, consisting of `username/repo_name`|	zhangsan/dataset-repo-name|
 |--target-path|-t|no|String|Download the local path specified by the warehouse|--target-path /path/to/local/folder|
 
 Example:
@@ -490,7 +490,7 @@ openxlab dataset remove --dataset-repo <dataset-repo>
 ```
 |Parameter|Abbreviation|Required or not|Parameter type|Parameter description|Example|
 |---|---|---|---|---|---|
-|--dataset-repo|-r|yes|String|Address of the data set repository, consisting of `username/repo-name`|zhangsan/repo-name|
+|--dataset-repo|-r|yes|String|Address of the data set repository, consisting of `username/repo_name`|zhangsan/repo-name|
 
 For example, if you want to delete a warehouse, you need to fill in the name of the data set warehouse, and the deletion operation is irreversible
 
@@ -556,7 +556,7 @@ info(dataset_repo='username/repo_name')
 ```
 |Parameter|Abbreviation|Required or not|Parameter type|Parameter description|Example|
 |---|---|---|---|---|---|
-| | dataset _ repo | -r | yes | String | the address of the data set repository, consisting of username/repo _ name | zhangsan/ceshi |
+| | dataset _ repo | -r | yes | String | the address of the data set repository, consisting of `username/repo_name`| zhangsan/ceshi |
 
 ### Dataset file list viewing (query)
 
@@ -566,7 +566,7 @@ query(dataset_repo='username/repo_name')
 ```
 |Parameter|Abbreviation|Required or not|Parameter type|Parameter description|Example|
 |---|---|---|---|---|---|
-|dataset_repo|-r|yes|String|Address of the data set repository, consisting of username/repo _ name.|zhangsan/ceshi|
+|dataset_repo|-r|yes|String|Address of the data set repository, consisting of `username/repo_name`|zhangsan/ceshi|
 
 ### Dataset creation (create_repo)
 
@@ -587,7 +587,7 @@ upload_file(dataset_repo='username/repo_name')
 ```
 |Parameter|Abbreviation|Required or not|Parameter type|Parameter description|Example|
 |---|---|---|---|---|---|
-|dataset_repo|-r|yes|String|Address of the data set repository, consisting of username/repo _ name.|zhangsan/repo-name|
+|dataset_repo|-r|yes|String|Address of the data set repository, consisting of `username/repo_name`|zhangsan/repo-name|
 |source_path|-s|yes|String|The path where the local file is uploaded|source_path='/path/to/local/folder/1.jpg'|
 |target_path|-t|no|String|Corresponding to the relative path under the data set warehouse. If not added, it will be uploaded to the root directory of the warehouse.|target_path='/train'|
 
