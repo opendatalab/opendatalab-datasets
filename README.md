@@ -43,3 +43,11 @@
 
 Check our [tutorials videos](https://www.youtube.com/watch?v=LjbRt7uddyw) (in Chinese) to get started.
 
+---
+
+In September this year, we have upgraded and launched the function of authors uploading datasets independently. We hereby invite you to participate in using it to better promote your open source datasets, AI research results, etc., so that more people can access, obtain and use your dataset. 
+
+This is an introduction to the dataset autonomous upload function 【上传功能介绍视频】，You can create and share your dataset according to our guidelines. 
+
+If you have any questions or obstacles, please feel free to contact us <a href="mailto:OpenDataLab@pjlab.org.cn">OpenDataLab@pjlab.org.cn</a>. Looking forward to your reply, thank you very much!
+
