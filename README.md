@@ -49,6 +49,6 @@ In September this year, we have upgraded and launched the function of authors up
 
 This is an introduction to the dataset autonomous upload function [【help doc】](https://github.com/opendatalab/opendatalab-datasets/blob/main/help%20doc.md)，You can create and share your dataset according to our guidelines. 
 
-If you have any questions or obstacles, please feel free to contact us <a href="mailto:OpenDataLab@pjlab.org.cn">OpenDataLab@pjlab.org.cn</a>. Looking forward to your reply, thank you very much!
+If you have any questions or obstacles, please feel free to contact us <a href="mailto:OpenDataLab@pjlab.org.cn">OpenDataLab@pjlab.org.cn</a>. 
 
 [![](https://github.com/opendatalab/opendatalab-datasets/blob/main/%E9%A1%B6%E4%BC%9A%E9%A1%B6%E5%88%8A%E6%95%B0%E6%8D%AE%E9%9B%86/ECCV/img/create%20your%20dataset.png?raw=true)](https://opendatalab.com/create)
