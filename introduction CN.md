@@ -4,14 +4,14 @@
   <div align="center">
     <b><font size="5">OpenDataLab 官网</font></b>
     <sup>
-      <a href="https://opendatalab.com">
+      <a href="https://opendatalab.com/?source=R2l0aHVi">
         <i><font size="4">HOT</font></i>
       </a>
     </sup>
     &nbsp;&nbsp;&nbsp;&nbsp;
     <b><font size="5">OpenXLab 浦源平台</font></b>
     <sup>
-      <a href="https://openxlab.org.cn/datasets?lang=en-US">
+      <a href="https://openxlab.org.cn/datasets?lang=en-US?source=R2l0aHVi">
         <i><font size="4">TRY IT OUT</font></i>
       </a>
     </sup>
@@ -19,7 +19,7 @@
 <div>&nbsp;</div>
 </div>
 
-[English](./README.md)🌎|**简体中文**🀄 
+[English](https://github.com/opendatalab)🌎|**简体中文**🀄 
 
 **OpenDataLab 为国产大模型提供高质量的开放数据集。** 我们提供：
 
