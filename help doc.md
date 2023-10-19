@@ -5,7 +5,7 @@ OpenDataLab supports multivariate data management. The data center provides the 
 # Contents
 - [Dataset creation process](#Dataset-creation-process)
 - [Authentication management](#Authentication-management)
-- [Dataset CLI (Command Line Utility)](Dataset-CLI-Command-Line-Utility)
+- [Dataset CLI (Command Line Utility)](#Dataset-CLI-Command-Line-Utility)
 - [Dataset Python SDK](#Dataset-Python-SDK)
 
 # Dataset creation process
