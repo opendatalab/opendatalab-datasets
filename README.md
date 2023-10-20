@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="顶会顶刊数据集/ECCV/img/Datalab_Logo_2230x580.png" height="100"/>
+  <img src="https://mmbiz.qpic.cn/mmbiz_gif/7yjDpC9UfD5Fk0NBJ7dbXDia22rOZUkW96YCA68Gp4IBtguxRGoExUAj8tH5Qd8eibGpnQqjIGQ2P8eHgOibibyS1w/640?wx_fmt=gif&wxfrom=5&wx_lazy=1" height="100"/>
   <div>&nbsp;</div>
   <div align="center">
     <b><font size="5">OpenDataLab website</font></b>
