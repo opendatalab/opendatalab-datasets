@@ -17,7 +17,9 @@
 <div>&nbsp;</div>
 </div>
 
-Welcome to this repository! Here you can find a list of topic-centric public data sources in high quality, providing the basic information for each. And it also provides blog about introductions and explanations of classic and widely used datasets in the field of AI. 
+**Welcome to this repository!**    
+
+Here you can find a list of topic-centric public data sources in high quality, providing the basic information for each. And it also provides blog about introductions and explanations of classic and widely used datasets in the field of AI. 
 
 **You can download complete dataset files from OpenDataLab** ([https://opendatalab.com/](https://opendatalab.com/?source=R2l0aHVi)). 
 
