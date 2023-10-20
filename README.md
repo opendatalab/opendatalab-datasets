@@ -21,36 +21,6 @@
 
 **English**🌎|[简体中文](https://github.com/opendatalab/opendatalab-datasets/blob/main/introduction%20CN.md)🀄 
 
-**OpenDataLab Provide ecology for high-quality datasets for community.** It provides:
+Welcome to this repository! Here you can find a list of topic-centric public data sources in high quality, providing the basic information for each. And it also provides blog about introductions and explanations of classic and widely used datasets in the field of AI. You can download complete dataset files from OpenDataLab ([https://opendatalab.com/](https://opendatalab.com/?source=R2l0aHVi)). 
 
-### Extensive open data resources
-● High-speed and simple way to access open datasets  
-● Large scale open datasets resources  
-● 1200+ Open datasets for Computer Vision\Large Model
-<br>
-● 200+ Open datasets by CVPR  
-● Categorized datasets for hot topics  
-
-### Open-source data processing toolkits
-● Data acquisition toolkits supporting large datasets  
-● Data acquisition toolkits supporting kinds of tasks   
-● Open source intelligent Toolbox for Labeling
-
-
-### Dataset description language
-● Format standardization  
-● DSDL: Dataset Description Language  
-● Define a CV dataset by DSDL  
-● OpenDataLab Standardized 100+ CV Datasets  
-
-Check our [tutorials videos](https://www.youtube.com/watch?v=LjbRt7uddyw) (in Chinese) to get started.
-
----
-
-In September this year, we have upgraded and launched the function of authors uploading datasets independently. We hereby invite you to participate in using it to better promote your open source datasets, AI research results, etc., so that more people can access, obtain and use your dataset. 
-
-This is an introduction to the dataset autonomous upload function [【help doc】](https://github.com/opendatalab/opendatalab-datasets/blob/main/help%20doc.md)，You can create and share your dataset according to our guidelines. 
-
-If you have any questions or obstacles, please feel free to contact us <a href="mailto:OpenDataLab@pjlab.org.cn">OpenDataLab@pjlab.org.cn</a>. 
-
-[![](https://github.com/opendatalab/opendatalab-datasets/blob/main/%E9%A1%B6%E4%BC%9A%E9%A1%B6%E5%88%8A%E6%95%B0%E6%8D%AE%E9%9B%86/ECCV/img/create%20your%20dataset.png?raw=true)](https://opendatalab.com/create)
+Our goal is to help you quickly and easily search, download, and use publicly available datasets in AI. We would appreciate it if you could provide us with information on newly emerging and trending datasets or insights into existing ones, thus allowing more people to learn about and make use of them.
