@@ -2,24 +2,20 @@
   <img src="https://mmbiz.qpic.cn/mmbiz_gif/7yjDpC9UfD5Fk0NBJ7dbXDia22rOZUkW96YCA68Gp4IBtguxRGoExUAj8tH5Qd8eibGpnQqjIGQ2P8eHgOibibyS1w/640?wx_fmt=gif&wxfrom=5&wx_lazy=1" height="100"/>
   <div>&nbsp;</div>
   <div align="center">
-    <b><font size="5">OpenDataLab website</font></b>
+    <b><font size="5">English 🌎</font></b>
     <sup>
-      <a href="https://opendatalab.com">
-        <i><font size="4">HOT</font></i>
-      </a>
     </sup>
     &nbsp;&nbsp;&nbsp;&nbsp;
-    <b><font size="5">OpenXLab platform</font></b>
+        <b><font size="5"> | </font></b>
     <sup>
-      <a href="https://openxlab.org.cn/datasets?lang=en-US">
-        <i><font size="4">TRY IT OUT</font></i>
-      </a>
     </sup>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://github.com/opendatalab/opendatalab-datasets/blob/main/introduction%20CN.md">
+        <i><font size="5">简体中文 🀄</font></i>
+      </a>
 </div>
 <div>&nbsp;</div>
 </div>
-
-**English**🌎|[简体中文](https://github.com/opendatalab/opendatalab-datasets/blob/main/introduction%20CN.md)🀄 
 
 Welcome to this repository! Here you can find a list of topic-centric public data sources in high quality, providing the basic information for each. And it also provides blog about introductions and explanations of classic and widely used datasets in the field of AI. You can download complete dataset files from OpenDataLab ([https://opendatalab.com/](https://opendatalab.com/?source=R2l0aHVi)). 
 
