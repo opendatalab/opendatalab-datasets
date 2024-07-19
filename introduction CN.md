@@ -1,22 +1,21 @@
 <div align="center">
-  <img src="顶会顶刊数据集/ECCV/img/Datalab_Logo_2230x580.png" height="100"/>
-  <div>&nbsp;</div>
-  <div align="center">
-    <b><font size="5">OpenDataLab 官网</font></b>
-    <sup>
-      <a href="https://opendatalab.com/?source=R2l0aHVi">
-        <i><font size="4">HOT</font></i>
-      </a>
-    </sup>
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <b><font size="5">OpenXLab 浦源平台</font></b>
-    <sup>
-      <a href="https://openxlab.org.cn/datasets?lang=en-US?source=R2l0aHVi">
-        <i><font size="4">TRY IT OUT</font></i>
-      </a>
-    </sup>
-</div>
-<div>&nbsp;</div>
+<p style="text-align: center;">
+  <img src="https://github.com/opendatalab/opendatalab-datasets/blob/main/%E9%A1%B6%E4%BC%9A%E9%A1%B6%E5%88%8A%E6%95%B0%E6%8D%AE%E9%9B%86/ECCV/img/Datalab_Logo_2230x580.png?raw=true" height="100" style="display: block; margin-left: auto; margin-right: auto;">
+  <br>
+  <a href="https://opendatalab.com/">🏡 Homepage</a>
+</a>
+  <br>
+  <br>
+  <a href="https://github.com/opendatalab?tab=stars">
+  <img  alt="GitHub Stars" src="https://img.shields.io/github/stars/opendatalab?style=social" />
+  <a/>
+  <a href="https://cdn.vansin.top/internlm/mineru.jpg">
+  <img alt="WeChat Group"src="https://img.shields.io/badge/WeChatGroup-MinerU-green?logo=wechat"  />
+  </a>
+  <a href="https://discord.com/invite/AsQMhuMN">
+  <img alt="Discord Group"src="https://img.shields.io/badge/Discord-OpenDataLab-red?logo=Discord" />
+</a>
+</p>
 </div>
 
 [English](https://github.com/opendatalab)🌎|**简体中文**🀄 
@@ -25,7 +24,7 @@
 
 ### 丰富的开放数据资源
 ● 高速、简单地访问开放数据集  
-● 5600余个大规模开放数据集资源  
+● 7700余个大规模开放数据集资源  
 ● 1200+计算机视觉\大模型的开放数据集  
 ● CVPR 提供的 200 多个开放数据集  
 ● 热门专题分类数据集
@@ -46,7 +45,7 @@
 
 ---
 
-今年9月，我们升级上线了作者上传原创数据集的功能。特此邀请您参与使用，更好地推广您的开源数据集、人工智能研究成果等；让更多的人能够访问、获取和使用您的数据集。
+我们升级上线了作者上传原创数据集的功能。特此邀请您参与使用，更好地推广您的开源数据集、人工智能研究成果等；让更多的人能够访问、获取和使用您的数据集。
 
 这是数据集自主上传功能的[【帮助文档】](https://github.com/opendatalab/opendatalab-datasets/blob/main/%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3.md)，您可以根据需要创建并分享您的数据集。
 
