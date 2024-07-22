@@ -2,18 +2,17 @@
 <p style="text-align: center;">
   <img src="https://github.com/opendatalab/opendatalab-datasets/blob/main/%E9%A1%B6%E4%BC%9A%E9%A1%B6%E5%88%8A%E6%95%B0%E6%8D%AE%E9%9B%86/ECCV/img/Datalab_Logo_2230x580.png?raw=true" height="100" style="display: block; margin-left: auto; margin-right: auto;">
   <br>
-  <a href="https://opendatalab.com/">🏡 Homepage</a>
-</a>
-  <br>
-  <br>
   <a href="https://github.com/opendatalab?tab=stars">
-  <img  alt="GitHub Stars" src="https://img.shields.io/github/stars/opendatalab?style=social" />
-  <a/>
-  <a href="https://cdn.vansin.top/internlm/mineru.jpg">
-  <img alt="WeChat Group"src="https://img.shields.io/badge/WeChatGroup-MinerU-green?logo=wechat"  />
+  <img  alt="GitHub Stars" src="https://img.shields.io/github/stars/opendatalab?style=social" /><a/>
+  <a href="https://arxiv.org/abs/2407.13773">
+  <img alt="Citation-OpenDataLab"src="https://img.shields.io/badge/Citation-OpenDataLab-red?logo=arxiv"  />
   </a>
-  <a href="https://discord.com/invite/AsQMhuMN">
-  <img alt="Discord Group"src="https://img.shields.io/badge/Discord-OpenDataLab-red?logo=Discord" />
+  
+  <a href="https://opendatalab.com/">🏡 OpenDataLab Homepage</a>
+</a>
+  <a href="https://discord.com/invite/AsQMhuMN">👋 Discord</a>
+</a>
+  <a href="https://cdn.vansin.top/internlm/mineru.jpg">💬 WeChat Group</a>
 </a>
 </p>
 </div>
