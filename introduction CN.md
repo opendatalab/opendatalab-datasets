@@ -8,7 +8,7 @@
   <img alt="Citation-OpenDataLab"src="https://img.shields.io/badge/Citation-OpenDataLab-red?logo=arxiv"  />
   </a>
   
-  <a href="https://opendatalab.com/">🏡 OpenDataLab Homepage</a>
+  <a href="https://opendatalab.com/">🏡 Homepage</a>
 </a>
   <a href="https://discord.com/invite/AsQMhuMN">👋 Discord</a>
 </a>
