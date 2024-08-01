@@ -10,7 +10,7 @@
   
   <a href="https://opendatalab.com/">🏡 Homepage</a>
 </a>
-  <a href="https://discord.com/invite/AsQMhuMN">👋 Discord</a>
+  <a href="https://discord.gg/JYsXDXXN">👋 Discord</a>
 </a>
   <a href="https://cdn.vansin.top/internlm/mineru.jpg">💬 WeChat Group</a>
 </a>
