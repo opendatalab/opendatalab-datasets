@@ -12,7 +12,7 @@
 </a>
   <a href="https://discord.gg/Tdedn9GTXq">👋 Discord</a>
 </a>
-  <a href="https://cdn.vansin.top/internlm/mineru.jpg">💬 WeChat Group</a>
+  <a href="https://mineru.space/common/qun/?qid=362634">💬 WeChat Group</a>
 </a>
 </p>
 </div>
