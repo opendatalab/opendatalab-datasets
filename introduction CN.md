@@ -8,11 +8,11 @@
   <img alt="Citation-OpenDataLab"src="https://img.shields.io/badge/Citation-OpenDataLab-red?logo=arxiv"  />
   </a>
   
-  <a href="https://opendatalab.com/">🏡 Homepage</a>
+  <a href="https://opendatalab.com/">🏡 官网</a>
 </a>
   <a href="https://discord.gg/Tdedn9GTXq">👋 Discord</a>
 </a>
-  <a href="https://mineru.space/common/qun/?qid=362634">💬 WeChat Group</a>
+  <a href="https://mineru.space/common/qun/?qid=362634">💬 微信交流群</a>
 </a>
 </p>
 </div>
