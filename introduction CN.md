@@ -12,7 +12,7 @@
 </a>
   <a href="https://discord.gg/Tdedn9GTXq">👋 Discord</a>
 </a>
-  <a href="[https://mineru.space/common/qun/?qid=362634](https://mineru.net/community-portal/?aliasId=7fe67fe1)">💬 微信交流群</a>
+  <a href="https://mineru.net/community-portal/?aliasId=7fe67fe1">💬 微信交流群</a>
 </a>
 </p>
 </div>
