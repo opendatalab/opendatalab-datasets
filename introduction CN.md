@@ -27,7 +27,7 @@
 - **🔗 SciAlign**：打通跨模态科学对象的语义对齐数据；
 - **🧠 Sci-Evo**：注入科学发现所需的动态推理逻辑数据。
 
-![](https://huggingface.co/spaces/opendatalab/README/resolve/main/image.png)
+![](https://github.com/opendatalab/.github/blob/main/profile/image.png?raw=true)
 
 
 ⚙️ 围绕这一范式，我们正持续沉淀相应的数据产品、处理工具与工程方案。**Sciverse 是 OpenDataLab 数据处理智慧在科学智能领域的体系化延伸**。
